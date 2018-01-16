@@ -1,0 +1,111 @@
+title: Article
+taxonomies:
+  topics: true
+fields:
+  section:
+    display: Article Hero
+    type: section
+  subtitle:
+    display: Subtitle
+    type: text
+  background_image:
+    display: Background Image
+    type: assets
+    container: main
+    max_files: 1
+  overlay_color:
+    display: Background Overlay Color
+    type: text
+    mode: color
+    width: 50
+    show_when:
+      add_color: true
+  blend_mode:
+    display: Background Blend Mode
+    type: select
+    default: none
+    width: 50
+    options:
+      none: none
+      overlay: overlay
+      soft-light: soft-light
+      multiply: multiply
+    show_when:
+      add_color: true
+  add_color:
+    display: Add Background Color
+    type: revealer
+    width: 33
+  section_2:
+    display: Article Content
+    type: section
+  story:
+    type: bard
+    display: Content
+    sets:
+      hero:
+        display: Hero Block
+        fields:
+          background_image:
+            type: assets
+            container: main
+            max_files: 1
+          height:
+            display: Height
+            type: select
+            width: 33
+            options:
+              800: 800px
+              screen-1/2: Half Screen
+              screen: Full Screen
+          background_color:
+            display: Background Color
+            type: text
+            mode: color
+            width: 33
+          blend_mode:
+            display: Blend Mode
+            type: select
+            default: none
+            width: 33
+            options:
+              none: none
+              overlay: overlay
+              soft-light: soft-light
+              multiply: multiply
+          headline:
+            type: text
+          subhead:
+            type: text
+      image:
+        display: Photo
+        fields:
+          image:
+            type: assets
+            container: main
+            max_files: 1
+          size:
+            type: radio
+            inline: true
+            default: inline
+            options:
+              md: inline
+              xl: oversized
+              full: full-width
+      two_col:
+        display: Two Column Text
+        fields:
+          col_one:
+            display: Column One
+            type: markdown
+            width: 50
+          col_two:
+            display: Column Two
+            type: markdown
+            width: 50
+      video:
+        display: Video Embed
+        fields:
+          video:
+            display: Video
+            type: video

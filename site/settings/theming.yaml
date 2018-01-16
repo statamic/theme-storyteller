@@ -1,0 +1,14 @@
+theme: storyteller
+default_layout: default
+default_page_template: default
+default_entry_template: article
+default_taxonomy_template: topics
+error_template_folder: errors
+default_fieldset: default
+default_page_fieldset: default
+default_entry_fieldset: article
+default_term_fieldset: term
+default_asset_fieldset: asset
+smartypants: false
+allow_php: false
+markdown_hard_wrap: false

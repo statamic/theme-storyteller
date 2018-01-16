@@ -1,0 +1,49 @@
+---
+footer_class: pt-3
+---
+
+<div class="content bg-white pb-5 -mt-5">
+
+    {{ partial:hero :headline="title" :subhead="subtitle" height="screen" }}
+
+    {{ story }}
+        {{ if type == "hero" }}
+            {{ partial:hero }}
+        {{ /if }}
+
+        {{ if type == "text" }}
+            <div class="{{ if first }}mt-3{{ /if }} px-2">
+                {{ text }}
+            </div>
+        {{ /if }}
+
+        {{ if type == "image" }}
+            <img src="{{ image }}" class="mx-auto mt-5 block max-w-{{ size }}">
+            {{ if image | get:alt }}<p class="text-base text-grey-dark text-center mt-2 mb-5 italic">{{ image | get:alt }}</p>{{ /if }}
+        {{ /if }}
+
+        {{ if type == "video" }}
+        <div class="max-w-xl mx-auto">
+            <div class="video-embed">
+                {{ if video | is_embeddable }}
+                <iframe src="{{ video | embed_url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                {{ else }}
+                <video src="{{ video | embed_url }}"></video>
+                {{ /if }}
+            </div>
+        </div>
+        {{ /if }}
+
+        {{ if type == "two_col" }}
+        <div class="flex flex-wrap lg:max-w-xl mx-auto text-justify">
+            <div class="flex-1 min-w-xs p-4">
+                {{ col_one | markdown }}
+            </div>
+            <div class="flex-1 min-w-xs p-4">
+                {{ col_two | markdown }}
+            </div>
+        </div>
+        {{ /if }}
+    {{ /story }}
+
+</div>

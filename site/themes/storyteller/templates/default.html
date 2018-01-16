@@ -1,0 +1,15 @@
+{{ collection:articles taxonomy="true" }}
+<a class="content block mb-5 mx-2 lg:mx-5" href="{{ url }}">
+    <div class="bg-grey-darker text-white h-screen-sans-nav relative rounded lg:rounded-lg shadow-lg overflow-hidden" style="background-color: {{ background_color }}">
+        <img src="{{ background_image }}" alt="" class="mix-{{ blend_mode }} pin absolute opacity-50 fit h-full w-full">
+        <div class="absolute h-full w-full z-10 flex items-center text-center">
+            <div class="flex-1 p-3">
+                <h6 class="font-subheading mb-2 text-lg opacity-50 tracking-wide">{{ date }}</h6>
+                <h1 class="leading-none mb-4">{{ title }}</h1>
+                <h2 class="font-subheading text-4xl">{{ subtitle }}</h2>
+            </div>
+        </div>
+        <img class="fit mix-{{ blend_mode or 'none' }} w-full h-{{ height }}" src="{{ image }}" alt="{{ alt }}">
+    </div>
+</a>
+{{ /collection:articles }}

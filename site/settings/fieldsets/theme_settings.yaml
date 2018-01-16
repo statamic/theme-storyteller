@@ -1,0 +1,15 @@
+title: Design
+fields:
+  site_name:
+    display: Site Name
+    type: text
+  site_background_image:
+    display: Site Background Image
+    instructions: For best results pick a darker image in a vertical orientation.
+    type: assets
+    max_files: 1
+    container: main
+  text_404:
+    display: 404 Text
+    instructions: Text to display on any 404 pages
+    type: text

@@ -1,0 +1,93 @@
+h1 {
+    @apply .font-heading .text-5xl .font-normal .mb-0 .leading-tight;
+    small {
+        @apply .text-4xl .font-serif .align-middle .tracking-tight .opacity-50;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        @apply .text-6xl;
+    }
+}
+
+h2 {
+    @apply .text-3xl .mb-3 .leading-tight;
+}
+
+h3 {
+    @apply .text-xl .mb-2;
+}
+p {
+    @apply .mb-3;
+}
+
+a {
+    @apply .text-grey-dark;
+
+    &:hover {
+        @apply .text-grey-darker;
+    }
+}
+
+blockquote {
+    @apply .text-3xl .py-2 .font-subheading .my-3 .relative .text-center;
+
+    &:before, &:after {
+        content: "";
+        background-size: auto 3px;
+        display: block;
+        height: 3px;
+        width: 50%;
+        margin: 45px auto;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%232C185B' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    }
+}
+
+nav {
+    a {
+        @apply .no-underline .text-white .opacity-75;
+        &:hover {
+            @apply .text-white .opacity-100;
+        }
+    }
+}
+
+.content {
+    p, h2, h3, h4, h5, table, ul, ol, blockquote {
+        @apply .max-w-md .mx-auto;
+    }
+    blockquote *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+
+    iframe, object, embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.fit { object-fit: cover; }
+
+.mix-difference { mix-blend-mode: difference; }
+
+.mix-multiply { mix-blend-mode: multiply; }
+
+.mix-soft-light { mix-blend-mode: soft-light; }
+
+.mix-overlay { mix-blend-mode: overlay; }
+
+.filter-greyscale { filter: grayscale(100%); }
+
+.outline-none { outline: none; }

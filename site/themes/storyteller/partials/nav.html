@@ -1,0 +1,12 @@
+<nav class="text-center relative p-2">
+    <a href="/" class="font-subheading text-xl leading-loose absolute pin-t pin-l m-2 z-50">
+        {{ site_name }}
+    </a>
+    <a href="/" class="z-50 relative p-1 font-heading font-normal text-2xl opacity-100 hover:opacity-75">
+        {{ section_title or title }}
+    </a>
+</nav>
+
+<a href="/articles/topics" class="absolute pin-t pin-r m-2 z-50 opacity-75 hover:opacity-100 mix-difference">
+    {{ theme:output src="img/tags.svg" }}
+</a>

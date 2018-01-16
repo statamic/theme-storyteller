@@ -1,0 +1,10 @@
+.DS_Store
+.env
+node_modules/
+bower_components/
+local
+statamic
+installer.php
+phpunit.xml
+please
+index.php

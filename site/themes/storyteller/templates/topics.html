@@ -1,0 +1,15 @@
+---
+title: Topics
+---
+
+<div class="content min-h-screen mb-3 bg-white mx-auto text-3xl font-subheading p-5 text-center">
+    {{ taxonomy:topics as="topics" }}
+        {{ if ! topics }}
+            <h2>Aw. No topics.</h2>
+        {{ else }}
+            {{ topics }}
+                <a href="{{ url }}">{{ title }}</a><br>
+            {{ /topics}}
+        {{ /if }}
+    {{ /taxonomy:topics }}
+</div>
