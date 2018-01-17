@@ -13,13 +13,11 @@ fields:
     type: assets
     container: main
     max_files: 1
-  overlay_color:
+  background_color:
     display: Background Overlay Color
     type: text
     mode: color
     width: 50
-    show_when:
-      add_color: true
   blend_mode:
     display: Background Blend Mode
     type: select
@@ -30,12 +28,6 @@ fields:
       overlay: overlay
       soft-light: soft-light
       multiply: multiply
-    show_when:
-      add_color: true
-  add_color:
-    display: Add Background Color
-    type: revealer
-    width: 33
   section_2:
     display: Article Content
     type: section
