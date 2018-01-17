@@ -7,4 +7,5 @@
         </div>
     </div>
     <img class="fit mix-{{ blend_mode or 'none' }} w-full h-{{ height }}" src="{{ image }}" alt="{{ alt }}">
+    {{ if show_topic }}<p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-75 p-2 font-subheading">{{ topics | sentence_list }}</p>{{ /if }}
 </div>

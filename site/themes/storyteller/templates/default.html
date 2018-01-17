@@ -9,7 +9,7 @@
                 <h2 class="font-subheading text-4xl">{{ subtitle }}</h2>
             </div>
         </div>
-        <img class="fit mix-{{ blend_mode or 'none' }} w-full h-{{ height }}" src="{{ image }}" alt="{{ alt }}">
+        <p class="absolute pin-b pin-l pin-r m-3 w-full text-center opacity-50 font-subheading">{{ topics | sentence_list }}</p>
     </div>
 </a>
 {{ /collection:articles }}
