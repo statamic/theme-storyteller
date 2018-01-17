@@ -1,8 +1,14 @@
 ## Storyteller Theme ![Statamic 2.0](https://img.shields.io/badge/statamic-2.8-blue.svg?style=flat-square)
 
-This theme is designed to highlight the new [Bard Fieldtype](https://docs.statamic.com/fieldtypes/bard) and it's magnificent capabilities.
+This site theme is designed to highlight the new [Bard Fieldtype](https://docs.statamic.com/fieldtypes/bard) and it's magnificent capabilities. It includes a number of pre-built Bard sets for long form content.
 
-Screenshot:
+- Hero Blocks with background images and color/mix overlays
+- Photos
+- Video Embeds
+- Two Column Text
+
+## Screenshot:
+
 ![Storyteller Preview](https://d.pr/i/VqnfH/aXEnVnAj5C+)
 
 ## Installing
