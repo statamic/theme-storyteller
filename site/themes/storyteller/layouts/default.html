@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tailwind Demo">
-    <title>{{ title or site_title }}</title>
+    <meta name="description" content="{{ meta_description or subtitle }}">
+    <title>{{ title }} / {{ site_name }}</title>
     <link rel="stylesheet" href="{{ theme:css src="main" }}">
     <link href="https://fonts.googleapis.com/css?family=Ultra|Unica+One|Volkhov" rel="stylesheet">
 </head>
@@ -15,9 +15,6 @@
 
     {{ template_content }}
 
-    <footer class="text-white text-center pb-3 font-subheading uppercase tracking-wide text-sm {{ footer_class }}">
-        Powered by <a href="https://statamic.com" class="text-white no-underline hover:text-whitish border-b">Statamic</a> &amp; designed by<br>
-        <a href="https://twitter.com/jackmcdade" class="opacity-75 hover:opacity-100 mt-1 block">{{ theme:output src="img/jack.svg" }}</a>
-    </footer>
+    {{ partial:footer }}
 </body>
 </html>
