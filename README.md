@@ -11,7 +11,7 @@ This site theme is designed to highlight the new [Bard Fieldtype](https://docs.s
 
 ![Storyteller Preview](https://d.pr/i/VqnfH/aXEnVnAj5C+)
 
-Or you can see it in action at [new.jackmcdade.com](https://new.jackmcdade.com).
+Or you can see it in action at [new.jackmcdade.com](https://jackmcdade.com/blog).
 
 ## Installing
 
